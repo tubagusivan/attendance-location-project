@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
 import * as cityPoint from '../city-point.json'
 import { Icon } from "leaflet";
 import '../App.css';
+import LineChart from "../components/LineChart";
+import BarChart from "../components/BarChart";
 
 export const icon = new Icon({
     iconRetinaUrl: './src/assets/marker-icon-2x.png',
@@ -33,6 +35,7 @@ const Map = () => {
                         icon={icon}
                     >
                         <Tooltip direction="top" offset={[10, 0]}>
+                            <p>{city?.properties?.Code}</p>
                             <span style={{ fontSize: 14, fontWeight: "bold" }}>
                                 {city?.properties?.Name}
                             </span>
@@ -41,12 +44,18 @@ const Map = () => {
                 ))}
             </MapContainer>
             <div className="sidebar">
-                <p class="underline underline-offset-1 text-md md:font-bold">
-                    Attendance Office History
-                </p>
-                <p class="underline underline-offset-1 text-md md:font-bold">
-                    Employee Information
-                </p>
+                <div className="mb-20">
+                    <p class="underline underline-offset-1 text-md md:font-bold">
+                        Attendance Office History
+                    </p>
+                    <LineChart />
+                </div>
+                <div>
+                    <p class="underline underline-offset-1 text-md md:font-bold">
+                        Employee Information
+                    </p>
+                    <BarChart />
+                </div>
             </div>
         </div>
     )
