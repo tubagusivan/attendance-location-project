@@ -1,0 +1,15 @@
+.leaflet-container {
+  width: 70vw;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  padding: 2em;
+  width: 30vw;
+}

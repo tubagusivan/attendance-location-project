@@ -1,0 +1,50 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "properties": {
+                "Code": "CGK",
+                "Name": "DKI Jakarta"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    106.845599,
+                    -6.2087634
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "properties": {
+                "Code": "BDO",
+                "Name": "Bandung"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.6191228,
+                    -6.9174639
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "properties": {
+                "Code": "SG",
+                "Name": "Singapore"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.819836,
+                    1.352083
+                ]
+            }
+        }
+    ]
+}
